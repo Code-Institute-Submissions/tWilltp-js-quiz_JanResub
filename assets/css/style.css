@@ -12,6 +12,11 @@ body {
     margin: 30px;
 }
 
+.question-text {
+    width: 90%;
+    height: 40px;
+}
+
 #checktrue, #checkfalse {
     float: right;
     height: 40px;

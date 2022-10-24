@@ -1,3 +1,5 @@
+// creates array of questions and answers
+
 var question = 0;
 var questions = [{
     "question": "The film 'Nightmare Before Christmas' was created using physical objects",
