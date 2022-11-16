@@ -137,9 +137,6 @@ The project was deployed on GitHub Pages. I used Gitpod as a development environ
 * From the source select branch and then main branch.
 * Finally save and then the website was deployed.
 
-* "put link to website here"
-* "potentially put 'how to run  locally' here aswell"
-
 ---
 
 # Credits
@@ -160,4 +157,4 @@ The project was deployed on GitHub Pages. I used Gitpod as a development environ
 
 # Screenshots
 
-[Screenshot]
+[Screenshots of page](https://ui.dev/amiresponsive?url=https://8000-twilltp-jspractice-4qugfp0sich.ws-eu75.gitpod.io/)demonstrating site responsivity.
