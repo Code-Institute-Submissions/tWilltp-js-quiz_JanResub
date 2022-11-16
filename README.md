@@ -116,7 +116,7 @@ As each question answer is selected for every correct entry the score will be in
 
 * I ensured that the HTML code was validated using the [w3c code validator](https://validator.w3.org/)
 * I ensured that the CSS code was validated using the [jigsaw validator](https://jigsaw.w3.org/css-validator/)
-* I ensured that the JS code was validated using the 
+* I ensured that the JS code was validated using [jshint](https://jshint.com/)
 
 ## Development Issues
 
