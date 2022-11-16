@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="assets/css/style.css">
-     <script src="assets/js/script.js"></script>
+     <link rel="404" href="404.html">
      <title>Quiz</title>
 </head>
 <body>
@@ -14,15 +14,15 @@
        Your score will increment with each correct answer. Have fun!</p>
    </header>
    <div id="question-area" class="item">
-      <div class="question-text"></div>
-      <button id="checkfalse">False</button>
-      <button id="checktrue">True</button>
+      <p id="question-el"></p>    
+      <button id="checktrue-btn" class="hide">True</button>
+      <button id="checkfalse-btn" class="hide">False</button>
    </div>
-   <div id="response">True</div>
-   <div>
-      <button id="next-question">Next Question</button>
-      <button id="reset">Reset</button>
+   <div id="play-area">
+      <button id="startgame-btn">Start Game</button>
+      <button id="nextQ-btn">Next Question</button>
+      <div id="scorebox-el">Score: 0</div>
    </div>
-   <div id="score-box">Score: 0</div>
+   <script src="assets/js/script.js"></script>
 </body>
 </html>
