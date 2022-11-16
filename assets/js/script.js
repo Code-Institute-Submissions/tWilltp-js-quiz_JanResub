@@ -59,21 +59,70 @@ checkFalseBtn.addEventListener('click', function() {
 })
 
 function startGame() {
+    
+    currentQuestion = 0
+    currentScore = 0
+    scoreEl.textContent = `Score: ${currentScore}`
+    displayQuestion.textContent = questions[currentQuestion].question
+
+    checkTrueBtn.classList.remove("hide")
+    checkFalseBtn.classList.remove("hide")
 
 }
 
 function nextQuestion() {
 
+    currentQuestion ++
+
+    if (currentQuestion < 10) {
+        displayQuestion.textContent = questions[currentQuestion].question
+    } else {
+        endQuiz()
+    }
+
+    checkTrueBtn.classList.remove("hide")
+    checkFalseBtn.classList.remove("hide")
+
 }
 
 function checkTrue() {
+
+    checkTrueBtn.classList.add("hide")
+    checkFalseBtn.classList.add("hide")
+
+    if (questions[currentQuestion].answer === true) {
+        currentScore ++
+        scoreEl.textContent = `Score: ${currentScore}`
+        alert("correct")
+       } else {
+        alert("incorrect")
+       }
 
 }
 
 function checkFalse() {
 
+    checkTrueBtn.classList.add("hide")
+    checkFalseBtn.classList.add("hide")
+
+    if (questions[currentQuestion].answer === false) {
+        currentScore ++
+        scoreEl.textContent = `Score: ${currentScore}`
+        alert("correct")
+       } else {
+        alert("incorrect")
+       }
+
 }
 
 function endGame() {
+    
+    checkTrueBtn.classList.add("hide")
+    checkFalseBtn.classList.add("hide")
+
+    alert(`congratulations on finishing the quiz, you're score was ${currentScore} out of 10`)
+    displayQuestion.textContent = "press the start game button to play the quiz again"
+    currentQuestion = 0 - 1
+    currentScore = 0
 
 }
