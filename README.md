@@ -157,4 +157,4 @@ The project was deployed on GitHub Pages. I used Gitpod as a development environ
 
 # Screenshots
 
-[Screenshots of page](https://ui.dev/amiresponsive?url=https://8000-twilltp-jspractice-4qugfp0sich.ws-eu75.gitpod.io/)demonstrating site responsivity.
+[Screenshots of page](https://ui.dev/amiresponsive?url=https://8000-twilltp-jspractice-4qugfp0sich.ws-eu75.gitpod.io/) demonstrating site responsivity.

@@ -30,45 +30,45 @@ let questions = [{
 }, {
     question: "James Cameron's 2012 film 'Avatar' was based on real events",
     answer: false
-}]
+}];
 
 // quiz variables
 
-let displayQuestion = document.getElementById('question-el')
-let questionBtn = document.getElementById('nextQ-btn')
-let startBtn = document.getElementById('startgame-btn')
-let checkTrueBtn = document.getElementById('checktrue-btn')
-let checkFalseBtn = document.getElementById('checkfalse-btn')
-let scoreEl = document.getElementById('scorebox-el')
-let currentQuestion = 0
-currentScore = 0
+let displayQuestion = document.getElementById('question-el');
+let questionBtn = document.getElementById('nextQ-btn');
+let startBtn = document.getElementById('startgame-btn');
+let checkTrueBtn = document.getElementById('checktrue-btn');
+let checkFalseBtn = document.getElementById('checkfalse-btn');
+let scoreEl = document.getElementById('scorebox-el');
+let currentQuestion = 0;
+currentScore = 0;
 
 // event listeners
 
 startBtn.addEventListener('click', function() {
 startGame()
-})
+});
 questionBtn.addEventListener('click', function() {
 nextQuestion()
-})
+});
 checkTrueBtn.addEventListener('click', function() {
 checkTrue()
-})
+});
 checkFalseBtn.addEventListener('click', function() {
 checkFalse()
-})
+});
 
 // displays first question
 
 function startGame() {
 
-currentQuestion = 0
-currentScore = 0
-scoreEl.textContent = `Score: ${currentScore}`
-displayQuestion.textContent = questions[currentQuestion].question
+currentQuestion = 0;
+currentScore = 0;
+scoreEl.textContent = `Score: ${currentScore}`;
+displayQuestion.textContent = questions[currentQuestion].question;
 
-checkTrueBtn.classList.remove("hide")
-checkFalseBtn.classList.remove("hide")
+checkTrueBtn.classList.remove("hide");
+checkFalseBtn.classList.remove("hide");
 
 }
 
@@ -76,16 +76,16 @@ checkFalseBtn.classList.remove("hide")
 
 function nextQuestion() {
 
-currentQuestion ++
+currentQuestion ++;
 
 if (currentQuestion < 10) {
-    displayQuestion.textContent = questions[currentQuestion].question
+    displayQuestion.textContent = questions[currentQuestion].question;
 } else {
-    endQuiz()
+    endQuiz();
 }
 
-checkTrueBtn.classList.remove("hide")
-checkFalseBtn.classList.remove("hide")
+checkTrueBtn.classList.remove("hide");
+checkFalseBtn.classList.remove("hide");
 
 } 
 
@@ -93,15 +93,15 @@ checkFalseBtn.classList.remove("hide")
 
 function checkTrue() {
 
-checkTrueBtn.classList.add("hide")
-checkFalseBtn.classList.add("hide")
+checkTrueBtn.classList.add("hide");
+checkFalseBtn.classList.add("hide");
 
 if (questions[currentQuestion].answer === true) {
-    currentScore ++
-    scoreEl.textContent = `Score: ${currentScore}`
-    alert("correct")
+    currentScore ++;
+    scoreEl.textContent = `Score: ${currentScore}`;
+    alert("correct");
    } else {
-    alert("incorrect")
+    alert("incorrect");
    }
 
 }
@@ -110,15 +110,15 @@ if (questions[currentQuestion].answer === true) {
 
 function checkFalse() {
 
-checkTrueBtn.classList.add("hide")
-checkFalseBtn.classList.add("hide")
+checkTrueBtn.classList.add("hide");
+checkFalseBtn.classList.add("hide");
 
 if (questions[currentQuestion].answer === false) {
-    currentScore ++
-    scoreEl.textContent = `Score: ${currentScore}`
-    alert("correct")
+    currentScore ++;
+    scoreEl.textContent = `Score: ${currentScore}`;
+    alert("correct");
    } else {
-    alert("incorrect")
+    alert("incorrect");
    }
 
 }
@@ -127,12 +127,12 @@ if (questions[currentQuestion].answer === false) {
 
 function endQuiz() {
 
-checkTrueBtn.classList.add("hide")
-checkFalseBtn.classList.add("hide")
+checkTrueBtn.classList.add("hide");
+checkFalseBtn.classList.add("hide");
 
-alert(`congratulations on finishing the quiz, you're score was ${currentScore} out of 10`)
-displayQuestion.textContent = "press the start game button to play the quiz again"
-currentQuestion = 0 - 1
-currentScore = 0
+alert(`congratulations on finishing the quiz, you're score was ${currentScore} out of 10`);
+displayQuestion.textContent = "press the start game button to play the quiz again";
+currentQuestion = 0 - 1;
+currentScore = 0;
 
 }
