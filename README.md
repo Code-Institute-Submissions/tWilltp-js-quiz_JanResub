@@ -3,8 +3,7 @@
 ## JavaScript Essentials Project
 
 * This website shows a basic example of an interactive game, a quiz with 10 film and entertainment qeustions.
-* This project is designed as a training excersize, not for professional use or example.  
-[Project2 view](URL 'https://twilltp.github.io/js-quiz/')
+* This project is designed as a training excersize, not for professional use or example.
 
 ---
 
