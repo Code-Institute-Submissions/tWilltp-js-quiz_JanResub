@@ -14,7 +14,7 @@
    - [Site creator aim](#Site-creator-aim)
    - [User aim](#User-aim)
    - [Site structure](#Site-structure)
-   - [Surface](#Surface)
+   - [Surface Design](#Surface-Design)
 - [Features](#Features)
 - [Technology](#Technology)
 - [Testing](#Testing)
@@ -45,7 +45,9 @@ The user should be able to navigate the site with great ease, understand the aim
 
 The site consists of one page, an explanation of the rules of the game, followed by the game area (having a true or false button for each question, a start game button and a next question button) finally, at the bottom of the page there is a score-box letting the user know how many questions they have answered correctly at every point in the game.
 
-## Surface
+## Surface Design
+
+The reason I chose the colours outlined below are due to their high contrast, making the different site components easy to see and their eye catching nature as 'aqua' is quite a bold colour. I chose these fonts because I personally liked them and had used them before. I believe that this layout would be the simplest and easiest to follow, displaying everything to the user at once seemed to leave no room for error in the site's usability or understanding.
 
 ### colours
 
@@ -110,6 +112,15 @@ As each question answer is selected for every correct entry the score will be in
 
 # Testing
 
+Test | Pass | Fail
+---|---|---
+is site structure maintained across different screen sizes | X | 
+if score counter accurately records correct answers | X | 
+if questions repeat or break their structure at any point | X | 
+if the questions display the correct value | X | 
+if the quiz properly resets for multiple attempts | X | 
+if the code throws any errors | X | 
+
 * I used chrome developer tools throughout the project to test the site's responsivity.
 
 ## Code Validation
@@ -122,7 +133,7 @@ As each question answer is selected for every correct entry the score will be in
 
 * I initially struggled with how to structure my JavaScript properly but my mentor was able to help me overcome this issue.
 
-* How to loop through the questions array one by one was a particulalry tricky function to write as the questions had to be displayed individualy I could not simply use a for loop to go through them another method had to be employed but aside from this there were little to no development issues.
+* How to loop through the questions array one by one was a particulalry tricky function to write as the questions had to be displayed individualy I could not simply use a for loop to go through them, so another method had to be employed, but aside from this there were little to no development issues.
 
 ---
 
@@ -136,6 +147,17 @@ The project was deployed on GitHub Pages. I used Gitpod as a development environ
 * Go to settings and select Git-hub pages on the left hand side of the page.
 * From the source select branch and then main branch.
 * Finally save and then the website was deployed.
+
+### Cloning
+
+* Cloning a GitHub repository creates a local copy of the remote repo. This allows you to make all of your edits 
+  locally rather than directly in the source files of the origin repo. You first need to allow Git to be used from the command line, the next thing you have to do is decide where to store the repo on your local machine, after that, open your web browser and enter the GitHub repository’s URL. Then on the right side of the screen, below the 'Contributors' tab, you will see a green button that says 'Clone or Download', click that. In the window that appears, select the 'Clipboard' icon to copy the repo URL to your clipboard. Open the Command Prompt on whichever terminal you are using on your computer. In the terminal, navigate to the location in which you would like to store the repo. You can do so by typing the following command: '$ cd <directory>'. Now, with the repo URL still copied to your clipboard, you can clone the repo. Enter the following command: '$ git clone <repo-url>' and everything should be completed after that step.
+
+
+### Forking
+
+* A fork is a new repository that shares code and visibility settings with the original 'upstream' repository, you 
+  can use forks to propose changes related to fixing a bug. When creating your public repository from a fork of someone's project, make sure to include a license file that determines how you want your project to be shared with others. You need to use Git on the command line, navigate to the 'octocat/Spoon-Knife' repository then, in the top-right corner of the page, click Fork. Select an owner for the forked repository keep in mind that by default, forks are named the same as their upstream repositories. You can change the name of the fork to distinguish it further and add a description of your fork if you want. Choose whether to copy only the default branch or all branches to the new fork. For many forking scenarios, such as contributing to open-source projects, you only need to copy the default branch. By default, only the default branch is copied. Finally Click 'Create fork' and the repo should then be successfully forked.
 
 ---
 
@@ -158,3 +180,5 @@ The project was deployed on GitHub Pages. I used Gitpod as a development environ
 # Screenshots
 
 [Screenshots of page](https://ui.dev/amiresponsive?url=https://8000-twilltp-jspractice-4qugfp0sich.ws-eu75.gitpod.io/) demonstrating site responsivity.
+
+add screenshots
