@@ -5,7 +5,7 @@ body {
     background-color: aqua;
 }
 
-
+/* question area styles */
 
 #question-el {
     width: 90%;
@@ -15,11 +15,15 @@ body {
     background-color: azure;
 }
 
+/* true and false button styles */
+
 #checktrue-btn, #checkfalse-btn {
     height: 40px;
     width: 40px;
     margin-left: 5%;
 }
+
+/* play area styles (start game and next question button) */
 
 #startgame-btn {
     height: 45px;
@@ -39,6 +43,8 @@ body {
     font-size: x-large;
 }
 
+/* score box styles */
+
 #scorebox-el {
     height: 45px;
     width: 240px;
@@ -49,7 +55,8 @@ body {
     font-size: xx-large;
 }
 
-#error {
-    text-align: center;
-    font-size: larger;
+/* JS classes */
+
+.hide {
+    display: none;
 }
